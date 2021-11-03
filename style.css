@@ -14,10 +14,13 @@ body {
 }
 
 header {
-    font-size: 1.5rem;
-    padding: 1rem 1rem 1rem 0;
-    background: darkcyan;
+    font-size: 2rem;
     text-align: right;
+}
+
+nav {
+    background: #1b0132;
+    padding: 1rem 1rem 1rem 0;
 }
 
 nav a {
@@ -30,7 +33,7 @@ nav img {
     display: none;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 375px) {
 
     header {
         text-align: left;
@@ -41,8 +44,21 @@ nav img {
         display: block;
     }
 
+    nav {
+        padding: 0;
+    }
+
     nav img {
-        display: inline-block;
+        display: block;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    nav:hover a {
+        display: block;
+        background: #1b0132;
     }
 
 }
