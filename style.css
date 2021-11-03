@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    font-size: 1.5rem;
+    padding: 1rem 1rem 1rem 0;
+    background: darkcyan;
+    text-align: right;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav img {
+    width: 5rem;
+    display: none;
+}
+
+@media screen and (max-width: 350px) {
+
+    header {
+        text-align: left;
+        padding: 0;
+    }
+
+    header a {
+        display: block;
+    }
+
+    nav img {
+        display: inline-block;
+    }
+
+}
